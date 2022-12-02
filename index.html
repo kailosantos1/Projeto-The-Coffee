@@ -1,0 +1,259 @@
+ 
+ 
+ 
+<!-- //tag de abertura do html//-->	<html>
+    <!-- //head é uma tag que serve para o cabeçalho, como , nome da página etc..//--> <head>  
+    <!-- //title é a tag de titulo da pagina web//-->	<title>Coffes</title> 
+    <!-- //charset é a tag de codificação do html, por exemplo o html vai aceitar acentos e caracteres especiais como “ç”//-->    <meta charset="UTF-8"> 
+     // 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     //
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    //   
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+      
+    <!-- //  tag de abertura do css//--><style> 
+    /* //declaração para modificar o css do body e do html da nossa pagina web//*/   body, html { 
+    /* //height é uma tag de altura do css, aonde essa tag aumenta ou diminui a altura//*/      height: 100%;
+    /* //essa tag font serve para alterar a fonte, e font-family serve para especificar a família da fonte, por exemplo: “Arial”//*/       font-family: "Inconsolata", sans-serif; 
+        }
+        
+     /* \\.bgimg é chamado uma div aonde essa div chama uma imagem e logo isso tem o css da bgimg//*/   .bgimg { 
+    /* \\essa tag do css define a posição do background de fundo, nesse caso ela esta sendo declarada no centro. \\*/     background-position: center;
+    /* \\a tag “size” do background é aonde definimos o tamanho da div da imagem no caso o cover a imagem não fica esticada e cobre o container inteiro\\*/      background-size: cover; 
+    /* \\a tag image do background é a própria imagem, nesse caso a imagem está sendo passada por uma url dentro de uma pasta.\\*/ background-image: url("coffeehouse.jpg");
+    /* \\min height é a altura mínima da imagem da div\\*/ min-height: 75%; 
+        }
+        
+    /* \\ aqui chamamos mais um div, pra chamar uma div sempre usamos um ponto e o nome da div\\*/ .menu { 
+    /* \\”none” essa tag display  retira o elemento do layout da página\\*/ display: none;
+        }
+    /* \\aqui fechamos a tag do css normalmente\\*/</style>
+    <!-- \\ logo apos fechamos a tag head \\--></head>
+    <!-- \\ e logo abrimos a tag do body para enfim declararmos as divs,inputs etc…\\--><body>
+
+        <!-- Links (sit on top) →
+    //essa div do W3 significa que a barra de navegação ou a navbar deverá ficar fixa no topo da página, ou seja, quando rolamos ela irá descer juntamente com a própria pagina.\\-->  <div class="w3-top">   <!--Barra de navegação fica no topo-->
+    <!-- \\ essa div tambem do W3 esta nos dizendo que a class ou nome da div vai ser declarada como “row”,ja o padding nos diz o tamanho dessa div nesse caso (Preenchimento de 8px na parte superior e inferior e 16px à esquerda e à direita.), logo apos temos a tag w3-black que significa a cor da barra ou seja na cor preta.\\ --> <div class="w3-row w3-padding w3-black"> 
+    <!-- \\ uma div a onde a classe é w3-col ou seja recipiente de coluna para qualquer conteúdo HTMl-->  <div class="w3-col s3"> 
+    <!-- \\ uma tag do tipo a aonde ela esta apontando para “#” ou seja no lugar do # a gente coloca o endereço url que a gente queira, logo apos isso estamos falando que a tag “a” vai ser do tipo button ou seja botão, esse botão vai ser block e esta inserido na cor preta.\\ --> <a href="#" class="w3-button w3-block w3-black">HOME</a>
+</div>
+    <!-- \\ uma div a onde a classe é w3-col ou seja recipiente de coluna para qualquer conteúdo HTMl-->        <div class="w3-col s3">
+     <!-- \\ uma tag do tipo a aonde ela esta apontando para “#” ou seja no lugar do # a gente coloca o endereço url que a gente queira, logo apos isso estamos falando que a tag “a” vai ser do tipo button ou seja botão, esse botão vai ser block e esta inserido na cor preta.\\--> <a href="#about" class="w3-button w3-block w3-black">ABOUT</a> 
+    <!-- \\ fechamento de div\\--> </div> 
+ 
+    <!-- \\ uma div a onde a classe é w3-col ou seja recipiente de coluna para qualquer conteúdo HTMl\\--> <div class="w3-col s3">
+     <!-- \\ uma tag do tipo a aonde ela esta apontando para “#” ou seja no lugar do # a gente coloca o endereço url que a gente queira, logo apos isso estamos falando que a tag “a” vai ser do tipo button ou seja botão, esse botão vai ser block e esta inserido na cor preta.\\--> <a href="#menu" class="w3-button w3-block w3-black">MENU</a> 
+    <!-- \\ fechamento de div\\--> </div> 
+ 
+    <!-- \\ uma div a onde a classe é w3-col ou seja recipiente de coluna para qualquer conteúdo HTMl\\--> <div class="w3-col s3"> 
+    <!-- \\ uma tag do tipo a aonde ela esta apontando para “#” ou seja no lugar do # a gente coloca o endereço url que a gente queira, logo apos isso estamos falando que a tag “a” vai ser do tipo button ou seja botão, esse botão vai ser block e esta inserido na cor preta.\\--> <a href="#where" class="w3-button w3-block w3-black">WHERE</a> 
+    <!-- \\ fechamento de div\\--> </div>
+    <!-- \\ fechamento de div\\--> </div> 
+    <!-- \\ fechamento de div\\--> </div>
+    <!-- \\ fechamento de div\\--> </div>
+        
+    
+     <!-- Header with image -->
+    <!-- \\ abertura da tag header, aonde ela esta na classe bgimg qye a gente mexeu la no css, aqui a gente ta falando que ela vai ser um container e vai ter uma cor acinzentada, e colocamos um id para ela.\\--> <header class="bgimg w3-display-container w3-grayscale-min" id="home"> 
+    <!-- \\fechamento de div\\--> </div>
+    <!-- \\ abertura da tag div, “w3 display bottomleft”exibe o conteúdo no canto inferior esquerdo do w3-display-container, “w3 center” colocamos a div no centro, logo ja damos um preenchimento de 12px na parte superior e inferior e 24px à esquerda e à direita com o padding large, com o hide small ocultamos o conteúdo em telas pequenas (menos de 601px).\\--> <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <!-- \\ tag do tipo span aonde ela recebe a classe “tag”\\--> <span class="w3-tag">Open from 6am to 5pm</span>
+    <!-- \\fechamento da div\\--> </div>
+    <!-- \\ abertura da div, aonde a classe é o display middle que exibimos o conteúdo no meio (centro) do w3-display-container, o w3 center é aonde deixamos a div centralizada.\\--> <div class="w3-display-middle w3-center"> 
+    <!-- \\tag do tipo span aonde a classe vai ser um texto branco, e na propria tag abrimos uma tag de css, aonde passamos o tamanho da fonte\\--> <span class="w3-text-white" style="font-size:90px">the<br>Coffee</span> 
+    <!-- \\fechamento da div\\--> </div> 
+    <!-- \\ abertura de uma div aonde a classe nos diz que ela exibe o conteúdo no canto inferior direito do w3-display-container, o w3 center é paea deixar a div centralizada e o paddind large vai ficar com o espaçamento ou preenchimento maior do que o padrão\\--> <div class="w3-display-bottomright w3-center w3-padding-large"> 
+    <!-- \\tag do tipo span aonde a classe vai ser um texto branco\\--> <span class="w3-text-white">15 Adr street, 5015</span> 
+    <!-- \\fechamento de div\\--> </div> 
+     <!-- \\fechamento da tag header\\--> </header> 
+    
+    
+    <!-- Add a background color and large text to the whole page -->
+    <!-- \\ abertura da tag div, com a color sand, grayscale adiciona um efeito de escala de cinza a um elemento (escala de cinza: 75%)\\--> <div class="w3-sand w3-grayscale w3-large">
+        
+
+    <!-- About Container -->
+    <!-- \\abertura da tag div colocando ela na classe container com um id\\--> <div class="w3-container" id="about">
+     <!-- \\abertura da tag div colocando ela na classe contente logo aplicando um css dentro da tag para colocar um max width ou seja a largura “tamanho” máximo da div\\--> <div class="w3-content" style="max-width:700px">
+    <!-- \\ tag h5 ser para colocar escritas funcionando quase igual um “p” mas servindo para títulos, subtítulos etc… logo estamos colocando esse h5 no centro e estamos dando um padding de 64 para ele\\ -->
+    <!-- abertura da tag span colocando ela em uma classe de tag e especificando um texto mais amplo\\   -->
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE COFFEE</span></h5> 
+    <!-- \\ abertura da tag “p” aonde a gente pode escrever textos ou qualquer coisa que a gente queira escrever e que queira que apareça no site\\ -->
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <!-- \\ abertura da tag “p” aonde a gente pode escrever textos ou qualquer coisa que a gente queira escrever e que queira que apareça no site\\ -->
+     <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <!-- \\abertura da tag div colocando ela em uma classe panel aonde o recipiente HTML com preenchimento esquerdo e direito de 16px e margem superior e inferior de 16px, o leftbar adiciona uma borda esquerda grossa (barra) a um elemento, lightgrey seria a cor que seria a cor cinza claro\\ -->
+    <div class="w3-panel w3-leftbar w3-light-grey">
+     
+    <!-- \\abertura da tag “p”, tag “i” é uma tag para fazer um destaque no texto\\ -->
+    <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+    <!-- \\abertura da tag “p” que ela serve para escrever textos etc…\\ -->
+    <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    <!-- \\fechamento da div\\--> </div> 
+    <!-- \\ abertura da tag “img” que lhe serve para colocarmos imagens no site, aonde o “src” é pasta ou o “caminho” da imagem e o “style” comtem um css como o width e o max width que servem para a dimensão, altura etc da imagem, logo apos temos a classe do img que seria margin top\\ -->
+    <img src="coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top"> 
+    <!-- \\tag “p” serve para escrevermos textos, e a tag strong serve para destacar alguma parte do texto\\ -->
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <!-- \\tag “p” serve para escrevermos textos, e a tag strong serve para destacar alguma parte do texto\\ -->
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+    <!-- \\fechamento de div\\--> </div>
+    <!-- \\ fechamento de div\\--> </div>
+     
+    <!-- Menu Container -->
+    <!-- \\abertura da tag div, colocando ela em uma classe container com um id\\ -->
+    <div class="w3-container" id="menu">
+    <!-- \\abertura da tag div colocando ela em uma classe content e colocando um css nela pela style dentro da própria tag\\ -->
+    <div class="w3-content" style="max-width:700px">
+         
+    <!-- \\ tag h5 ser para colocar escritas funcionando quase igual um “p” mas servindo para títulos, subtítulos etc… logo estamos colocando esse h5 no centro e estamos dando um padding de 64 para ele\\ -->
+    <!-- abertura da tag span colocando ela em uma classe de tag e especificando um texto mais amplo\\ -->
+     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5> 
+          
+    <!-- \\abertura da tag div, colocando ela em uma classe “row” falando que deve ficar no centro com o “center” e o card colocando um contêiner para qualquer conteúdo HTML e o padding que é o espaçamento\\ -->
+    <div class="w3-row w3-center w3-card w3-padding"> 
+    <!-- \\abertura da tag “a” aonde a tag esta apontando para um href aonde esse href esta apontando para um javascript, temos um onlick, que significa que so quando a gente clicar ele realiza tal comando, e temos um id\\ -->
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+    <!-- \\abertura de uma div contendo ela uma classe col, e colocando uma cor para essa div\\  -->
+    <div class="w3-col s6 tablink w3-dark-grey">Eat</div> 
+    <!-- \\ fechamento da tag “a”\\--> </a>
+    <!-- \\abertura da tag “a” aonde a tag esta apontando para um href aonde esse href esta apontando para um javascript, temos um onlick, que significa que so quando a gente clicar ele realiza tal comando\\  -->
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+    <!-- \\abertura de uma div contendo ela uma classe col\\ -->
+     <div class="w3-col s6 tablink">Drink</div>
+    <!-- \\fechamento da tag “a”\\--> </a>
+     <!-- \\ fechamento da div\\--> </div>
+        
+    <!-- \\abertura da div colocando um id para ela colocando ela dentro de uma classe container, dando um padding ou um espaçmento para ela de 48 e colocando ela em um card que seria um contêiner para qualquer conteúdo HTML, logo apos colocamos um css com o “style” falando para ficar com o display block, ou seja display ficar como bloco\\ -->
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card" style="display: block;"> 
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Bread Basket</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br> 
+            
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Honey Almond Granola with Fruits</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br> 
+            
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\  -->
+     <h5>Belgian Waffle</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\  -->
+    <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+            
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\  -->
+    <h5>Scrambled eggs</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br> 
+            
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Blueberry Pancakes</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\  -->
+    <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p> 
+    <!-- \\fechamento da div\\--> </div>
+        
+    <!-- \\abertura da div colocando um id para ela e colocando ela dentro da classe container, dando um padding ou um espaçamento de 48 e colocando um car que é um contêiner para qualquer conteúdo HTML, logo apos colocando um style para o css ficar junto com a div e dando um diplay none para o css\\ -->
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card" style="display: none;"> 
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Coffee</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Regular coffee 2.50</p><br> 
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Chocolato</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br> 
+            
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Corretto</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Whiskey and coffee 5.00</p><br> 
+            
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Iced tea</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>  
+            
+    <!-- \\ abertura da tag “h5” aonde a gente coloca titulos ou subtitulos\\ -->
+    <h5>Soda</h5>
+    <!-- \\aberetura da tag “P” aonde escrevemos textos etc… colocamos isso na classe text grey para ficar com o texto cinza\\ -->
+    <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p> 
+    <!-- \\abertura da div\\--> </div>  
+    <!-- \\ abertura da tag “img” que lhe serve para colocarmos imagens no site, aonde o “src” é pasta ou o “caminho” da imagem e o “style” comtem um css como o width e o max width que servem para a dimensão, altura etc da imagem, logo apos colocamos um margin top\\ -->
+    <img src="coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;"> 
+    <!-- \\fechamento de div\\--> </div> 
+     <!-- \\ fechamento de div\\--> </div>
+    
+
+     <!-- Contact/Area Container -->
+    <!-- \\abertura da tag div colocando ela em uma classe container dando um id para ela e colocando um css dentro da div dando um padding ou um espaçamento bottom ou seja embaxo de 32px -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;"> 
+     <!-- \\ abertura da tag div colocando ela dentro de uma classe content colocando juntamente com essa div um css abrindo com o style e dando um max width de 700px\\ -->
+     <div class="w3-content" style="max-width:700px"> 
+    <!-- \\abertura da tag h5 que serve para titulos e subtitulos, colocando ela dentro de uma classe center para ficar no centro e dando um padding ou espaçamento de 48, abertura da tag span colocando ela em uma classe tag e wide\\ -->
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5> 
+    <!-- \\abertura da tag “p” que serve para escrever textos e etc…\\ -->
+    <p>Find us at some address at some place.</p>
+    <!-- \\abertura da tag img colocando um src nela pois é o caminho ou pasta aonde a imagem esta, colocando ela dentro da tag image, e dando um css com o width ou largura de 100\\ -->
+    <img src="map.jpg" class="w3-image" style="width:100%"> <!--Largura-->
+    <!-- \\abertura da tag “P” que ela serve para escrevermos textos e etc, abertura da tag span aonde a tag vai ter uma classe de tag\\ -->
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <!-- \\abertura da tag “p” aonde podemos escrever textos e etc… temos tambem a tag strong aonde essa tag é um destaque para a escrita\\ -->
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <!-- \\aqui temos a tag form aonde é uma tag de formulario, action é para aonde vamos mandar os dados do formulario e o target é para abrir uma pagina nova\\ -->
+    <form action="/action_page.php" target="_blank">
+    <!-- \\abertura da tag “p” aonde ela serve para escrevermos textos e etc… juntamente com a tag input aonde ela vaiter uma classe input, um padding ou epaçamento de 16 e uma borda, vai ser do tipo text ou seja do tipo texto, vai ter um placeholder name, que vai ficar no campo input, tem um required e um name para o input\\ -->
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p> 
+    <!-- \\abertura da tag “p” aonde ela serve para escrevermos textos e etc… juntamente com a tag input aonde ela vaiter uma classe input, um padding ou epaçamento de 16 e uma borda, vai ser do tipo number ou seja do tipo numero, vai ter um placeholder name, que vai ficar no campo input, tem um required e um name para o input\\ -->
+    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required="" name="People"></p> 
+    <!-- \\abertura da tag “p” aonde ela serve para escrevermos textos e etc… juntamente com a tag input aonde ela vaiter uma classe input, um padding ou epaçamento de 16 e uma borda, vai ser do tipo number ou seja do tipo numero, vai ter um placeholder, que vai ficar no campo input, tem um required e um name para o input\\ -->
+    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-11-16T20:00"></p> 
+    <!-- \\abertura da tag “p” aonde ela serve para escrevermos textos e etc… juntamente com a tag input aonde ela va iter uma classe input, um padding ou espaçamento de 16 e uma borda, vai ser do tipo number ou seja do tipo numero, vai ter um placeholder, que vai ficar no campo input, tem um required e um name para o input\\ -->
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+    <!-- \\abertura da tag “p” aonde escrevemos textos e etc… temos a tag button aonde ela esta dentro de uma classe button na cor black ou preta som um type submit ou um tipo enviar\\ -->
+    <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p> 
+    <!-- \\fechamento da tag form\\--> </form>
+    <!-- \\fechamento da div\\--> </div>
+    <!-- \\fechamento da div\\--> </div>
+    
+
+     <!-- End page content -->
+    <!-- \\fechamento da div\\--> </div>
+        
+        <!-- Footer -->
+    <!-- \\abertura da tag footer colocando ela dentro da classe center para ela ficar no centro, dando a cor cinza claro para ela, um padding ou espaçamento de 48, e dando uma tamanho maior para ela\\ -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large"> 
+    <!-- \\abrindo a tag “p” aonde escrevemos textos etc… abertura da tag a aonde colocamos um href para apontar para o site, um titulo e para abir em uma nova pagina, damos uma classe para ela\\ -->
+    <p>Created by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Kailo Santos</a></p>
+    <!-- \\fechamento da tag footer\\--> </footer> 
+        
+        <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+        </script>
+        
+        
+    <!-- \\fechamento da tag body\\--> </body> 
+    <!-- \\fehamento da tag html\\--> </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
